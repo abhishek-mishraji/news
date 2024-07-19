@@ -1,0 +1,89 @@
+.articlee {
+    border: 1px solid #ddd;
+    /* Light grey border, updated to #ddd for consistency */
+    margin: 20px auto;
+    /* Centering and adding vertical space */
+    padding: 20px;
+    /* Padding inside the article */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow, adjusted for consistency */
+    max-width: 600px;
+    /* Max width with centering */
+    background-color: #fff;
+    /* White background */
+}
+
+.articlee h2 {
+    color: #333;
+    /* Dark grey for text */
+    margin-bottom: 15px;
+    /* Space below the title */
+}
+
+.articlee img {
+    max-width: 100%;
+    /* Responsive image width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 4px;
+    /* Rounded corners for the image */
+    margin-bottom: 15px;
+    /* Space below the image */
+}
+
+.articlee p,
+.articlee .content {
+    color: #666;
+    /* Medium grey for paragraph, applied to .content for consistency */
+    line-height: 1.5;
+    /* Line height for readability */
+    margin-bottom: 15px;
+    /* Space below the paragraph, adjusted for .content */
+}
+
+.articlee .content {
+    background-color: #f9f9f9;
+    /* Light grey background for content */
+    padding: 10px;
+    /* Padding inside content */
+    border-left: 3px solid #007bff;
+    /* Blue border on the left */
+}
+
+.articlee a {
+    background-color: #007bff;
+    /* Bootstrap primary blue */
+    color: #ffffff;
+    /* White text */
+    padding: 10px 15px;
+    /* Padding inside the link */
+    text-decoration: none;
+    /* No underline */
+    border-radius: 4px;
+    /* Rounded corners for the link */
+    transition: background-color 0.3s ease;
+    /* Smooth background color change on hover */
+    display: inline-block;
+    /* Ensures proper spacing and alignment */
+    margin-top: 20px;
+    /* Space above the link */
+}
+
+.articlee a:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Style for the dropdown toggle */
+.articlee div[onClick] {
+    display: inline-block;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    margin-top: 10px;
+    cursor: pointer;
+    /* Cursor pointer moved here for consolidation */
+}

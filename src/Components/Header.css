@@ -1,0 +1,55 @@
+.header {
+    background-color: #007bff;
+    /* Bootstrap primary blue */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    /* Padding around content */
+    text-align: center;
+    /* Center the text */
+}
+
+.header h1 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 2rem;
+    /* Larger font size */
+}
+
+.header form {
+    margin-top: 20px;
+    /* Space above the form */
+}
+
+.header input[type="text"] {
+    padding: 10px;
+    /* Padding inside the input */
+    margin-right: 10px;
+    /* Space between input and button */
+    width: 300px;
+    /* Width of the input field */
+    border-radius: 5px;
+    /* Rounded corners for the input */
+    border: 1px solid #ccc;
+    /* Light grey border */
+}
+
+.header button {
+    padding: 10px 20px;
+    /* Padding inside the button */
+    background-color: #0056b3;
+    /* Darker blue */
+    color: white;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+.header button:hover {
+    background-color: #004085;
+    /* Even darker blue on hover */
+}
