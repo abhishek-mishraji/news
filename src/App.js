@@ -27,7 +27,8 @@ function App() {
       const formatEndDate = endDate.toISOString().split('T')[0];
 
 
-      const Response = await axios.get(`https://newsapi.org/v2/everything?q=${query}&from=${formatStartDate}&to=${formatEndDate}&sortBy=popularity&pageSize=10&page=${page}&apiKey=3f0a554942ca4fba9505d04aa21bfbe0`);
+      // const Response = await axios.get(`https://newsapi.org/v2/everything?q=${query}&from=${formatStartDate}&to=${formatEndDate}&sortBy=popularity&pageSize=10&page=${page}&apiKey=3f0a554942ca4fba9505d04aa21bfbe0`);
+      const Response = await axios.get(`https://saurav.tech/NewsAPI/everything/cnn.json`);
       setArticles(Response.data.articles);
       console.log(Response.data.articles);
     } catch (error) {
@@ -58,7 +59,7 @@ function App() {
           <Pagination setPage={setPage} />
 
           <Routes>
-            <Route path="/" element={
+            <Route path="/news" element={
               <>
                 <NewsList articles={articles} />
               </>} />
